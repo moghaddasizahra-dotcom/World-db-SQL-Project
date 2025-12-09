@@ -1,15 +1,18 @@
-# World-db-SQL-Project
-This project showcases 19 SQL queries using the **world_db** database in MySQL.  
+# World-db-SQL Project
+This project showcases **19 SQL queries** using the **world_db** database in MySQL.  
+
+It demonstrates structured SQL problem-solving, data analysis, and database querying skills, covering a variety of scenarios such as demographic analysis, population studies, and economic insights.
 
 ---
 
-This repository demonstrates structured SQL problem-solving, data analysis, and database querying.
-
 ## Project Contents
-- **SQL Script contains all the syntax of the 19 questions**  
-- **19+ screenshots of query results**  
-- **Imported world db SQL database**  
-- **README documentation**
+
+This repository includes:
+
+- **SQL Script** containing all 19 queries in a single file (`SQL script.sql`)  
+- **19+ screenshots** showing query results for each question (`screenshots/Q1.jpg`, etc.)  
+- **Original world_db SQL database file** for reference  
+- **README documentation** explaining each query scenario, SQL syntax, and results
   
 ---
 
@@ -197,7 +200,7 @@ ORDER BY CityName ASC;
 **Scenario:**  
 Census bureau analysing cities with the smallest populations.
 
-**SQL Syntax (Method 1 - Order & Limit:** 
+**SQL Syntax (Method 1 - Order & Limit):** 
 ```SQL
 SELECT * 
 FROM `City`
@@ -205,7 +208,7 @@ ORDER BY `Population`
 LIMIT 1;
 ```
 
-**SQL Syntax (Method 2 - Using MIN Subquery:** 
+**SQL Syntax (Method 2 - Using MIN Subquery):** 
 ```SQL
 SELECT *
 FROM `City`
@@ -222,7 +225,7 @@ WHERE `Population` = (SELECT MIN(`Population`) From `City`);
 **Scenario:**  
 Research institute analysing the world's highest population country.
 
-**SQL Syntax (Method 1 - Order & Limit:** 
+**SQL Syntax (Method 1 - Order & Limit):** 
 ```SQL
 SELECT `Name` AS Country,
 	`Population`
@@ -231,7 +234,7 @@ ORDER BY `Population` DESC
 LIMIT 1;
 ```
 
-**SQL Syntax (Method 2 - Using MAX Subquery:** 
+**SQL Syntax (Method 2 - Using MAX Subquery):** 
 ```SQL
 SELECT *
 FROM `Country`
@@ -239,8 +242,8 @@ WHERE `Population` = (SELECT MAX(`Population`) From `Country`);
 ```
 
 **Output Screenshots:**  
-![Q12.1](screenshots/Q12_1.jpg)  
-![Q12.2](screenshots/Q12_2.jpg)
+![Q12.1](screenshots/Q12.1.jpg)  
+![Q12.2](screenshots/Q12.2.jpg)
 
 
 
@@ -390,4 +393,15 @@ LIMIT 10 OFFSET 30;
 
 
 
+## Conclusion
+
+This repository serves as a **comprehensive reference for SQL query practice** using a real-world database. It is suitable for:
+
+- Learning and practising SQL syntax and concepts  
+- Understanding database structures and relationships  
+- Exploring demographic, economic, and geographical data  
+
+All SQL queries, along with output screenshots, are included for **easy review and verification**.  
+
+---
 
