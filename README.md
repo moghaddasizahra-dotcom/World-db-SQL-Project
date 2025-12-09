@@ -1,18 +1,14 @@
 # World-db-SQL-Project
 This project showcases 19 SQL queries using the **world_db** database in MySQL.  
-Each task includes:
 
--  The question  
--  The scenario  
--  The SQL query used  
--  The output screenshot
--  
+---
+
 This repository demonstrates structured SQL problem-solving, data analysis, and database querying.
 
 # Included Contents
-- **19 SQL query files**  
+- **SQL Script contains all the syntax of the 19 questions**  
 - **19+ screenshots of query results**  
-- **Imported world_db SQL database**  
+- **Imported world db SQL database**  
 - **README documentation**
   
 ---
@@ -26,7 +22,7 @@ Below are all questions with their related scenarios, SQL syntax, and output scr
 **Scenario:**  
 Determine how many cities exist in the USA for a demographic baseline.
 
-**SQL Syntax 1:** 
+**SQL Syntax:** 
 ```
 SELECT COUNT(*) AS TotalCitiesInUSA
 From `City`
