@@ -1,49 +1,44 @@
 # World-db-SQL-Project
-SOL assignment - 19 queries using world-db
-
-This project showcases SQL skills using the **world_db** database in MySQL.  
+This project showcases 19 SQL queries using the **world_db** database in MySQL.  
 Each task includes:
 
 -  The question  
 -  The scenario  
 -  The SQL query used  
 -  The output screenshot
+-  
 This repository demonstrates structured SQL problem-solving, data analysis, and database querying.
-
-# Project Structure
-world-db-sql-project/
-├── sql/ # SQL scripts for all 19 questions
-├── screenshots/ # Output screenshots for each question
-├── database/ # world_db.sql file
-└── README.md
 
 # Included Contents
 - **19 SQL query files**  
 - **19+ screenshots of query results**  
 - **Imported world_db SQL database**  
-- **README documentation** (you’re reading it!)
-
+- **README documentation**
+  
 ---
 
 # **SQL Questions & Screenshots**
 
 Below are all questions with their related scenarios, SQL syntax, and output screenshots.
 
----
-
 ## **1. Count Cities in USA**
 
 **Scenario:**  
 Determine how many cities exist in the USA for a demographic baseline.
 
-**SQL File:** `01_count_cities_usa.sql`
+**SQL Syntax 1:** 
+```
+SELECT COUNT(*) AS TotalCitiesInUSA
+From `City`
+WHERE `Countrycode` = "USA";
+```
 
 **Screenshot:**  
-![Screenshot](screenshots/Q1.png)
+![Screenshot](screenshots/Q1.ipg)
 
----
 
-## 🔹 **2. Country with Highest Life Expectancy**
+
+## **2. Country with Highest Life Expectancy**
 
 **Scenario:**  
 Identify the country with the highest life expectancy for global health analysis.
