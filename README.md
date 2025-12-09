@@ -29,8 +29,8 @@ From `City`
 WHERE `Countrycode` = "USA";
 ```
 
-**Screenshots:**  
-![Screenshot](Screenshots/Q1.ipg)
+**Output:**  
+![screenshot](screenshots/Q1.ipg)
 
 
 
