@@ -5,7 +5,7 @@ This project showcases 19 SQL queries using the **world_db** database in MySQL.
 
 This repository demonstrates structured SQL problem-solving, data analysis, and database querying.
 
-# Included Contents
+## Project Contents
 - **SQL Script contains all the syntax of the 19 questions**  
 - **19+ screenshots of query results**  
 - **Imported world db SQL database**  
@@ -13,48 +13,59 @@ This repository demonstrates structured SQL problem-solving, data analysis, and 
   
 ---
 
-# **SQL Questions & Screenshots**
+## **SQL Questions & Output Screenshots**
 
 Below are all questions with their related scenarios, SQL syntax, and output screenshots.
 
-## **1. Count Cities in USA**
+### **1. Count Cities in USA**
 
 **Scenario:**  
 Determine how many cities exist in the USA for a demographic baseline.
 
 **SQL Syntax:** 
-```
+```SQL
 SELECT COUNT(*) AS TotalCitiesInUSA
 From `City`
 WHERE `Countrycode` = "USA";
 ```
 
 **Output:**  
-![screenshot](screenshots/Q1.ipg)
+![Q1](screenshots/Q1.ipg)
 
 
 
-## **2. Country with Highest Life Expectancy**
+### **2. Country with Highest Life Expectancy**
 
 **Scenario:**  
 Identify the country with the highest life expectancy for global health analysis.
 
-**SQL File:** `02_highest_life_expectancy.sql`
+**SQL Syntax:** 
+```SQL
+SELECT `Name`, `LifeExpectancy`
+FROM `country`
+ORDER BY `LifeExpectancy` DESC
+LIMIT 1;
+```
 
-**Screenshot:**  
-![Screenshot](screenshots/Q2.png)
+**Output:**  
+![Q2](screenshots/Q2.png)
 
----
 
-## 🔹 **3. Cities Containing the Word “New”**
+
+### **3. Cities Containing the Word “New”**
 
 **Scenario:**  
 Travel agency wants to promote cities with “New” in their names.
 
-**SQL File:** `03_cities_with_new.sql`
+**SQL Syntax:** 
+```SQL
+SELECT *
+FROM `city`
+WHERE `Name` LIKE '%New%';
+```
 
 **Screenshot:**  
-![Screenshot](screenshots/Q3.png)
+![Q3](screenshots/Q3.png)
 
 ---
 
