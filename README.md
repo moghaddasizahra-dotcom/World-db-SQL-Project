@@ -30,7 +30,7 @@ WHERE `Countrycode` = "USA";
 ```
 
 **Output:**  
-![Q1](screenshots/Q1.ipg)
+![Q1](screenshots/Q1.jpg)
 
 
 
