@@ -9,7 +9,7 @@ It demonstrates structured SQL problem-solving, data analysis, and database quer
 
 This repository includes:
 
-- **SQL Script** containing all 19 queries in a single file (`SQL script.sql`)  
+- **SQL Script** containing all 19 queries in a single file (`world_db_queries.sql`)  
 - **19+ screenshots** showing query results for each question (`screenshots/Q1.jpg`, etc.)  
 - **Original world_db SQL database file** for reference  
 - **README documentation** explaining each query scenario, SQL syntax, and results
